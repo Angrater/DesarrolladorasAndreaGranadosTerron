@@ -1,0 +1,178 @@
+/* Crea la caja con el formulario */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Aplica el estilo básico a la página */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #20242e;
+}
+
+/* Le aplica el estilo a la caja del formulario */
+.container {
+    width: 30%;
+    height: 70%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 500px;
+    max-height: 600px;
+    color: #b0b8dc;
+    background-color: #24303c;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000, 1px 1px 2px 2px #76a0ca;
+}
+
+/* Da forma al formulario */
+form {
+	max-width: 400px;
+	min-width: 260px;
+	margin: 10px 20px auto;
+	padding: 0.5rem 1rem;
+}
+
+/* Título del formulario */
+form h1 {
+	padding: 10px 0;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* Da formato a cada uno de los inputs */
+.field {
+	margin-bottom: 0.75rem;
+	color: #8c92ac
+}
+
+/* Da formato donde irán los mensajes de error */
+.field small {
+	color: #dc3545;
+}
+
+/* Formato de las etiquetas de los inputs */
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	vertical-align: top;
+	margin-top: 10px;
+	width: 100%;
+}
+
+input,
+textarea,
+select {
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+	width: 100%;
+	font-family: inherit;
+	font-size: 1rem;
+}
+
+input::placeholder {
+	color: #c2c2c2;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	box-shadow: 0 0 0 2pt rgb(49, 132, 253, 0.5);
+}
+
+input[disabled],
+textarea[disabled] {
+	background-color: #f5f5f5;
+	box-shadow: none;
+	color: #7a7a7a;
+	cursor: not-allowed;
+}
+
+/* input error */
+input.error,
+textarea.error,
+select.error {
+	border-color: #dc3545;
+	background-position: 98%;
+	background-repeat: no-repeat;
+	background-image: url(images/error-icon.svg);
+}
+
+input.error:focus,
+textarea.error:focus,
+select.error:focus {
+	box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
+}
+
+/* input success */
+input.success,
+textarea.success,
+select.success {
+	border-color: #198754;
+	background-position: 98%;
+	background-repeat: no-repeat;
+	background-image: url(images/success-icon.svg);
+}
+
+input.success:focus,
+textarea.success:focus {
+	box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
+}
+
+/* button */
+button {
+	margin-top: 20px;
+	background: #6c63fe;
+	color: #fff;
+	border-radius: 0.25rem;
+	font-size: 0.75rem;
+	font-weight: 400;
+	border-color: #000000;
+	border-width: 2px;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+	box-shadow 0.15s ease-in-out;
+	text-align: center;
+	padding: 0.75rem 0.75rem;
+}
+
+button:hover {
+	background: #6c63fe;
+	border-style:ridge;
+	border-color: #acacac;
+	border-width: 4px
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+	color: #fff;
+	background-color: #6c63fe;
+	border-style:ridge;
+	border-color: #acacac;
+	border-width: 4px
+	box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+
+.half {
+	width: 50%;
+}
+.quarter {
+	width: 25%;
+}
+
+.full {
+	width: 100%;
+}
+
+.error {
+	color: #dc3545;
+}

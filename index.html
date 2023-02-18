@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Laboratorio - Create Account</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="style.css" />
+		
+
+	</head>
+	<body>
+		<div class="container">
+			<form action="" method="post" id="createaccount">
+				<h1>Create Account</h1>
+				<div class="field">
+					<label for="name">Nombre</label>
+					<input type="text" id="name" name="name" placeholder=""/>
+					<small></small>
+				</div>
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" data-toggle="tooltip" data-placement="bottom" title="" placeholder=""/>
+					<small></small>
+				</div>
+				<div class="field">
+					<label for="password">Clave</label>
+					<input type="password" id="password" name="password" placeholder=""/>
+					<small></small>
+				</div>
+				<div class="field">
+					<label for="confirmation">Confirme su clave</label>
+					<input type="password" id="confirmation" name="confirmation" maxlength="8" placeholder=""/>
+					<small></small>
+				</div>
+				<div class="field">
+					<button type="submit" class="full">ENVIAR</button>
+				</div>
+			</form>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
